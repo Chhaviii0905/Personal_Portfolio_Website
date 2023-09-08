@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(6, 25, 45);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    font-size: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.75rem;
+    background-color: rgb(33, 11, 128);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 1.4375rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: crimson;
+    font-size: 1.04rem;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 0.075rem;
+    margin: 3.75rem 5.25rem;
+
+
+}
+
+section {
+    padding: 6.25rem 0;
+}
+
+.max-width {
+    max-width: 81.25rem;
+    padding: 0 5rem;
+    margin: auto;
+}
+
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 3.75rem;
+    padding-bottom: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 11.25rem;
+    height: 0.1875rem;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    font-size: 1.5rem;
+    color: crimson;
+    padding: 0 0.3125rem;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.left {
+    font-size: 1.5rem;
+
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 5.9375rem 0;
+    align-items: center;
+}
+
+.firstSection>div {
+    width: 38%;
+}
+
+
+
+.leftSection {
+    font-size: 2.1rem;
+
+
+
+}
+
+.leftSection button {
+    padding: 50% 0;
+
+}
+
+.leftSection .btn {
+    padding: 0.3125rem;
+    background: rgb(36, 36, 114);
+    color: white;
+    border: 0.125rem solid white;
+    border-radius: 0.375rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+
+}
+
+.rightSection img {
+    width: 70%;
+
+}
+
+.purple {
+    color: rgb(141, 10, 36);
+}
+
+#element {
+    color: rgb(141, 10, 36);
+
+}
+
+/* about section styling */
+.about .title::before {
+    background: #fff;
+}
+
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.625rem 1.875rem;
+    margin-top: 1.25rem;
+    border-radius: 0.375rem;
+    border: 0.125rem solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 0.075rem;
+    margin: 3.75rem 5.25rem;
+
+
+}
+
+/* skills section styling */
+.skills .title::before {
+    background: #fff;
+}
+
+
+
+.skills .skills-content .column {
+    width: calc(50% - 1.875rem);
+}
+
+.skills .skills-content .left .text {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin-top: 1.25rem;
+    border-radius: 0.375rem;
+    border: 0.125rem solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: crimson;
+    background: none;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 0.9375rem;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 0.3125rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.skills .skills-content .right .line {
+    height: 0.3125rem;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 70%;
+}
+
+.skills-content .right .js::before {
+    width: 50%;
+}
+
+.skills-content .right .c::before {
+    width: 80%;
+}
+
+.skills-content .right .mysql::before {
+    width: 90%;
+}
+
+.skills-content .right .python::before {
+    width: 90%;
+}
+
+.skills-content .right .ml::before {
+    width: 70%;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 0.075rem;
+    margin: 3.75rem 5.25rem;
+
+
+}
+
+/* services section styling */
+.services,
+.container {
+    color: #fff;
+    background: rgb(6, 25, 45);
+}
+
+.services .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+    margin-top: 1rem;
+    background: #111;
+}
+
+.services .serv-content .card {
+    width: calc(30% - 1.25rem);
+    background: rgb(51, 51, 230);
+    text-align: center;
+    border-radius: 0.375rem;
+    padding: 2.5rem 1.5625rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: rgb(141, 10, 36);
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 5rem;
+    color: rgb(20, 83, 220);
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0.625rem 0 0.4375rem 0;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 0.075rem;
+    margin: 3.75rem 5.25rem;
+
+
+}
+
+.container {
+    color: #fff;
+    background: rgb(6, 25, 45);
+}
+
+.container .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.container .title::after,
+.teams .title::after {
+    margin-top: 1rem;
+    background: #111;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 0.75rem;
+    /* Some padding */
+    border: 0.0625rem solid #ccc;
+    /* Gray border */
+    border-radius: 0.25rem;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 0.375rem;
+    /* Add a top margin */
+    margin-bottom: 1rem;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(20, 83, 220);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: crimson;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 0.3125rem;
+    background-color: rgb(6, 25, 45);
+    padding: 1.25rem;
+}
+
+
+
+footer {
+    background-color: rgb(33, 11, 128);
+}
+
+.footer {
+    display: flex;
+    padding: 1.4375rem 7.625rem;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 13.9375rem;
+
+}
+
+footer .footer-right {
+    text-align: center;
+    color: gray;
+    padding: 0.75rem 0;
+}
+
+@media (max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+
+    .about .about-content .left img {
+        height: 20rem;
+        width: 17rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    
+    .skills .skills-content .left .text {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.625rem;
+    }
+
+    .services .title::after,
+    .teams .title::after {
+        margin-top: 0.4rem;
+        background: #111;
+    }
+
+    .services .serv-content .card {
+        width: calc(20% - 0.25rem);
+        background: rgb(51, 51, 230);
+        text-align: center;
+        border-radius: 0.275rem;
+        padding: 3rem 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .services .serv-content .card:hover .box {
+        transform: scale(1.0);
+    }
+    
+    .services .serv-content .card i {
+        font-size: 2.5rem;
+        color: rgb(20, 83, 220);
+        transition: color 0.3s ease;
+    }
+    
+    .services .serv-content .card:hover i {
+        color: #fff;
+    }
+    
+    .services .serv-content .card .text {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0.8rem 0 0.35rem 0;
+    }
+    .services .serv-content .card .box img{
+        height: 7rem;
+        width: 7rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .about .about-content .left img {
+        height: 18rem;
+        width: 16rem;
+        object-fit: cover;
+        border-radius: 0.4rem;
+    }
+}
